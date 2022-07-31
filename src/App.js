@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import Categories from "./Categories";
+import Menu from "./Menu";
+
 import items from "./data";
 
 function App() {
@@ -13,6 +16,8 @@ function App() {
           <h2>Our Menu</h2>
           <div className="underline"></div>
         </div>
+        <Categories />
+        <Menu items={menuItems} />
       </section>
     </main>
   );
